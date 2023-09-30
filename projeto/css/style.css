@@ -287,3 +287,54 @@
     font-weight: bold;
     margin: 50px 0 100px;
   }
+
+  /* tablet */
+  @media (max-width: 900px){
+    .main-banner p{
+      padding: 0 6rem;
+    }
+    .searchdomain-container{
+      padding: 2 rem 4rem;
+    }
+  }
+  /* Celular */
+  @media(max-width:576px){
+    html,body{
+      overflow-x: hidden;
+      /*  O que passar do tamanho do meu dispositivo, ele esconde*/
+    }
+    .navbar-items li{
+      font-size: 12px;
+      margin-left: 10px;      
+    }
+    .main-banner p{
+      padding: 0 6rem;
+    }
+    .services-container ul{
+      flex-direction: column;
+      /* Um elemento embaixo do outro */
+    }
+    .plans-container{
+      flex-direction: column;
+      width: 100%;
+    }
+    .plan{
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    .searchdomain-container h2{
+      font-size: 28px;
+    }
+    .searchdomain-container input[type="text"]{
+      width: 100%;
+    }
+    .contact-container{
+      padding: 3rem 2rem;
+    }
+    .contact-container input,
+    .contact-container textarea{
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
